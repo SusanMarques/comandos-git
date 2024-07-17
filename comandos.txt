@@ -39,3 +39,9 @@ outros comandos:
 
 Renomear main para master:
 Se você já tem um branch chamado main e deseja renomeá-lo para master, você primeiro precisa estar no branch main ou especificar o branch: git branch -M main master
+
+verificar as branchs locais:
+git branch
+
+verificar as mudanças:
+git status
