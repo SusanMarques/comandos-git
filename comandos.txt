@@ -1,0 +1,41 @@
+
+"crie um novo repositório na linha de comando."
+
+echo "# comandos-git" >> README.md ( cria um arquivo Readme.md com o conteúdo # comandos-git )
+
+git init (converter um diretório existente no computador,
+ que geralmente é o diretório de algum projeto, em um repositório Git, 
+ Para que possamos realizar o controle de versão de um projeto, 
+ registrando as mudanças realizadas nele ao longo do tempo, 
+ devemos, primeiramente, transformar o diretório do projeto em um repositório Git. 
+ O comando git init é utilizado para esse objetivo, devendo ser executado apenas uma vez.
+Quando executado, ele configura o diretório atual para ser rastreado pelo Git, 
+inicializando um repositório vazio.)
+
+git add README.md  (adiciona o arquivo README.md, dd diz ao Git que você quer incluir atualizações em arquivos específicos na próxima commit.
+se utilizar o "git ." ele adicionará todos os arquivos)
+
+git commit -m "first commit"(Quando você faz um commit, você está essencialmente salvando um ponto no histórico do seu projeto, que pode ser revisitado ou revertido posteriormente.)
+
+git branch -M master (O comando git branch -M master renomeia o branch atual para master. Se o branch master já existir, ele será substituído pelo branch atual.)
+
+git remote add origin "URL" (Este comando adiciona um repositório remoto chamado origin com 
+a URL URL ao seu repositório Git local. Depois de adicionar este repositório remoto, 
+você pode empurrar (push) e puxar (pull) mudanças entre seu repositório local e este repositório remoto.)
+
+git push -u origin master (git push: Este comando é usado para enviar commits do repositório local para um repositório remoto.
+-u (ou --set-upstream): Esta opção define a configuração upstream para o branch, ou seja, associa o branch local com o branch remoto. Isso simplifica futuros comandos git push e git pull porque você não precisará especificar o branch remoto e o branch local explicitamente.
+origin: Este é o nome do repositório remoto para o qual você deseja enviar suas mudanças. Neste caso, é o repositório remoto que você configurou anteriormente com o comando git remote add origin.
+master: Este é o nome do branch que você está enviando para o repositório remoto.)
+
+
+"...ou empurre (envie) um repositório existente a partir da linha de comando."
+
+git remote add origin "URL"
+git branch -M master
+git push -u origin master
+
+outros comandos:
+
+Renomear main para master:
+Se você já tem um branch chamado main e deseja renomeá-lo para master, você primeiro precisa estar no branch main ou especificar o branch: git branch -M main master
