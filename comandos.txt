@@ -45,3 +45,9 @@ git branch
 
 verificar as mudanças:
 git status
+
+criando uma branch chamada melhorias:
+git branch melhorias
+
+trocar entre branchs:
+git checkout melhorias (a minha branch era teste agora passa a ser melhorias )
